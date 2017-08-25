@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<%# render @task, task: @task %>
+<%= react_component 'FlashableTask', {task: @task}, {prerender: true} %>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>
